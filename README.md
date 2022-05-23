@@ -19,6 +19,12 @@ Useful for directional finding
 ## Usage
 
 ```bash
+# Switch adapter to monitoring/injection mode
+sudo airmon-ng start wlan0
+
+# Make sure you are on correct channel
+sudo iwconfig wlan0mon channel 1
+
 sudo python ./main.py --interface wlan0mon --ssid OpenAP
 ```
 
