@@ -30,8 +30,8 @@ def configurePlot():
 	ax = fig.add_subplot(111)
 	plot, = ax.plot(x_vec,y_vec,'-o',alpha=0.8)
 
-	plt.ylabel('Signal')
-	plt.title('Title: {}'.format(ssid))
+	plt.ylabel('Signal (dBm)')
+	plt.title('SSID: {}'.format(ssid))
 	plt.show()
 
 	return plot
