@@ -4,6 +4,8 @@ Plots strength of WiFi AP signal across time.
 
 Useful for directional finding
 
+![](https://github.com/nemanjan00/wifi-radar/blob/master/screenshot/example.png?raw=true)
+
 ## Table of contents
 
 <!-- vim-markdown-toc GitLab -->
