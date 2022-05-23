@@ -11,6 +11,7 @@ Useful for directional finding
 <!-- vim-markdown-toc GitLab -->
 
 * [Usage](#usage)
+* [How does it work?](#how-does-it-work)
 * [Authors](#authors)
 
 <!-- vim-markdown-toc -->
@@ -20,6 +21,10 @@ Useful for directional finding
 ```bash
 sudo python ./main.py --interface wlan0mon --ssid OpenAP
 ```
+
+## How does it work?
+
+It continously sends Probe Requests to AP and measures response power
 
 ## Authors
 
