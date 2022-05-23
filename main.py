@@ -9,7 +9,7 @@ parser = argparse.ArgumentParser(description="WiFi radar")
 
 parser.add_argument("--interface", help="Name of interface in monitoring mode", required=True)
 parser.add_argument("--ssid", help="Name of WiFi AP to measure", required=True)
-parser.add_argument("--smoothing", help="Smoothing coefficient", default=5)
+parser.add_argument("--smoothing", help="Smoothing coefficient", default=1)
 
 args = parser.parse_args()
 
