@@ -1,3 +1,4 @@
+import random
 import matplotlib.pyplot as plt
 import numpy as np
 import argparse
@@ -44,10 +45,21 @@ def draw():
 
 	plt.pause(0.1)
 
+def randomMAC():
+	mac = [
+		random.randint(0x00, 0xff),
+		random.randint(0x00, 0xff),
+		random.randint(0x00, 0xff),
+		random.randint(0x00, 0xff),
+		random.randint(0x00, 0xff),
+		random.randint(0x00, 0xff)
+	]
+
+	return ':'.join(map(lambda x: "%02x" % x, mac))
 
 def getSignalStrength(ssid):
 	recipients_mac_adress= 'ff:ff:ff:ff:ff:ff'
-	your_mac_adress= '02:26:12:43:37:f5'
+	your_mac_adress= randomMAC()
 	channel = chr(1)
 
 	frame= RadioTap()\
